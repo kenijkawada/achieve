@@ -16,11 +16,6 @@ li{
   color:#ffffff;
 }
 
-.show-page a{
-  color:#ffffff;
-  border-radius: 5px;
-}
-
 .index-page, .new-page, .edit-page, .check-page, .show-page{
   text-align: center;
 }
@@ -47,7 +42,7 @@ li{
 .top-content {
   width: 100%;
   height: 700px;
-  background-image: url(people-2576162_1280.jpg);
+  background-image: image-url("people-2576162_1280.jpg");
   background-size: 100% 100%;
   position: relative;
   margin:0;
