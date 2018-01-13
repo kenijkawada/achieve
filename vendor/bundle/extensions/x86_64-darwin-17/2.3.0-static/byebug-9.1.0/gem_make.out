@@ -1,0 +1,19 @@
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+/Users/kawadakenji/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180110-24664-15zukvy.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR="
+compiling locker.c
+compiling byebug.c
+compiling context.c
+compiling breakpoint.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20180110-24664-zvsi55/byebug

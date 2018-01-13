@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bolgs</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnavi">
+          <span class="sr-only">Bootstrap</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Blog</a>
+      </div>
+      <div id="gnavi" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="/blogs">投稿一覧</a>
+          </li>
+          <li>
+            <a href="/blogs/new">新規投稿</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  <body>
+    <%= yield %>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">201710 Blog application.</p>
+      </div>
+    </footer>
+  </body>
+</html>

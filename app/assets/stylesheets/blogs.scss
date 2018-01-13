@@ -1,0 +1,104 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+.index-page a{
+  color:#ffffff;
+}
+
+.show-page a{
+  color:#ffffff;
+  border-radius: 5px;
+}
+
+.index-page, .new-page, .edit-page, .check-page, .show-page{
+  text-align: center;
+}
+
+.new-page h2{
+  margin: 50px 50px;
+}
+
+.index-page h2{
+  margin: 50px 50px;
+}
+.edit-page h2{
+  margin: 50px 50px;
+}
+.check-page h3{
+  margin: 50px 50px;
+}
+
+.show-page h2{
+  margin: 50px 50px;
+}
+
+
+.top-content {
+  width: 100%;
+  height: 700px;
+  background-image: url(people-2576162_1280.jpg);
+  background-size: 100% 100%;
+  position: relative;
+  margin:0;
+}
+
+.top-content::before{
+  background-color:rgba(0,0,0,0.2);
+  position:absolute;
+  top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+}
+
+.box{
+    width:100%;
+    text-align: center;
+    font-size:50px;
+    position:absolute;
+}
+
+.box P{
+    color:#ffffff;
+    line-height:700px;
+}
+
+.create-btn{
+  text-align: center;
+  margin-top:30px;
+}
+
+.index-page h3{
+  margin: 0;
+  padding: 0;
+  margin-bottom:5px;
+}
+
+.index-page button{
+  margin-bottom:50px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.footer p{
+  text-align: center;
+  line-height: 60px;
+}

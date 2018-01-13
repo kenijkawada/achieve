@@ -1,0 +1,15 @@
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/kawadakenji/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20180110-24664-1wr9lvi.rb extconf.rb
+creating Makefile
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20180110-24664-16untlp/bindex
