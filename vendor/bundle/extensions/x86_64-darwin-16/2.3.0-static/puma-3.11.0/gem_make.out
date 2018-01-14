@@ -1,0 +1,25 @@
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/puma-3.11.0/ext/puma_http11
+/Users/kawadakenji/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20180113-15232-1k6znbd.rb extconf.rb
+checking for BIO_read() in -lcrypto... yes
+checking for SSL_CTX_new() in -lssl... yes
+checking for openssl/bio.h... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/extensions/x86_64-darwin-16/2.3.0-static/puma-3.11.0/mkmf.log
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/puma-3.11.0/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/puma-3.11.0/ext/puma_http11
+make "DESTDIR="
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+compiling http11_parser.c
+linking shared-object puma/puma_http11.bundle
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/puma-3.11.0/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20180113-15232-tzczic/puma
