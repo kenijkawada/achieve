@@ -2,8 +2,8 @@ class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user, only: [:new, :show, :edit]
 
-  def top
 
+  def top
   end
 
   def index
@@ -19,7 +19,7 @@ class BlogsController < ApplicationController
   end
 
   def create
-    @blog = Blog.create(blog_params)
+    @blog = Blog.new(blog_params)
     if @blog.save
       redirect_to blogs_path, notice: "ブログを作成しました！"
     else
@@ -61,7 +61,4 @@ class BlogsController < ApplicationController
   def set_blog
     @blog = Blog.find(params[:id])
   end
-
-
-
 end

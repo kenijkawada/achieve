@@ -3,6 +3,8 @@ body{
   padding: 0;
 }
 
+
+
 ul{
   margin: 0;
   padding: 0;
@@ -16,26 +18,44 @@ li{
   color:#ffffff;
 }
 
+.index-page{
+  margin-bottom: 50px;
+}
+
 .index-page, .new-page, .edit-page, .check-page, .show-page, .signup-page, .login-page, .user-page{
   text-align: center;
 }
 
 .new-page h2{
-  margin: 50px 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .index-page h2{
-  margin: 50px 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .edit-page h2{
-  margin: 50px 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .check-page h3{
-  margin: 50px 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .show-page h2{
-  margin: 50px 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.user-page h2{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.show-page a{
+  color:#ffffff;
 }
 
 
@@ -88,7 +108,17 @@ li{
   margin-bottom:50px;
 }
 
-.footer {
+header{
+ position: fixed;
+ top: 0;
+ width:100%;
+ z-index: 100;
+}
+
+.margin-top{
+  margin-top:50px;
+}
+footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -96,7 +126,7 @@ li{
   background-color: #f5f5f5;
 }
 
-.footer p{
+footer p{
   text-align: center;
   line-height: 60px;
 }
