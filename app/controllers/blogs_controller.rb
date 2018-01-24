@@ -18,7 +18,7 @@ class BlogsController < ApplicationController
   end
 
   def create
-    @blog = current_user.blogs.build(blog_params)
+    @blog = @current_user.blogs.build(blog_params)
     if @blog.save
       redirect_to blogs_path, notice: "ブログを作成しました！"
     else
@@ -32,10 +32,10 @@ class BlogsController < ApplicationController
 
   def edit
     @blog
-  if @blog.user_id != @current_user.id
-    flash[:notice] = "自分の投稿ではありません"
-    redirect_to blogs_path
-  end
+    if @blog.user_id != @current_user.id
+      flash[:notice] = "自分の投稿ではありません"
+      redirect_to blogs_path
+    end
   end
 
   def update
