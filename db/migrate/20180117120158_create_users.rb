@@ -13,5 +13,12 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.datetime :published_at
       t.timestamps
     end
+
+    create_table :favorites do |t|
+      t.integer :user_id
+      t.integer :blog_id
+
+      t.timestamps
+    end
   end
 end
