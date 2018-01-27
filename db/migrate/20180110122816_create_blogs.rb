@@ -10,5 +10,12 @@ class CreateBlogs < ActiveRecord::Migration[5.1]
       t.text :content
       t.integer :user_id
     end
+
+    create_table :favorites do |t|
+      t.integer :user_id
+      t.integer :blog_id
+
+      t.timestamps
+    end
   end
 end

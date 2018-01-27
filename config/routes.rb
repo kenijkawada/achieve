@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   end
 
   root :to => "blogs#top"
+
+  resources :favorites, only: [:create, :destroy]
 end
