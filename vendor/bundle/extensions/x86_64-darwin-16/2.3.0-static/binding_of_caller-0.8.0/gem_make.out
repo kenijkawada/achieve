@@ -1,0 +1,16 @@
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+/Users/kawadakenji/.rbenv/versions/2.3.0/bin/ruby -r ./siteconf20180127-87392-h605u5.rb extconf.rb
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target `clean'.  Stop.
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /Users/kawadakenji/workspace/bootstrap_app/vendor/bundle/gems/binding_of_caller-0.8.0/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.
