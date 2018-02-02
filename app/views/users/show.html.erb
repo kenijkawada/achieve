@@ -3,6 +3,7 @@
 
 <p>メールアドレス: <%= @user.email %></p>
 
+<p>【<%= @user.name %>がお気に入りした記事】</p>
 <% @favorites_blogs.each do |blog| %>
     <h3>タイトル: <%= blog.title %></h3><br>
     <h3>内容: <%= blog.content %></h3><br>
