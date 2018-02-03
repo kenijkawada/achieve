@@ -17,6 +17,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </button>
               <a class="navbar-brand" href="/">Blog</a>
             </div>
@@ -27,6 +28,8 @@
                 </li>
                 <li>
                   <a href="/blogs/new">新規投稿</a>
+                </li>
+                <li><a href="contacts/new">お問い合わせ</a>
                 </li>
                 <% if logged_in? %>
                   <li><%= link_to "Profile", user_path(current_user.id) %></li>
