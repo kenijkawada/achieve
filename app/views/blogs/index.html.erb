@@ -7,7 +7,7 @@
     <h3>タイトル: <%= blog.title %></h3><br>
     <h3>内容: <%= blog.content %></h3><br>
     <button type="button" class="btn btn-primary"><%= link_to '詳細', blog_path(blog.id)%></button>
-    <% if blog.user_id == current_user.id %>
+    <% if blog.user == current_user %>
     <button type="button" class="btn btn-success"><%= link_to "編集", edit_blog_path(blog.id) %></button>
     <button type="button" class="btn btn-danger"><%= link_to '削除', blog_path(blog.id), method: :delete, data: { confirm: '本当に削除していいですか？' } %></button><br>
     <% end %>
