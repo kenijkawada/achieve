@@ -1,0 +1,15 @@
+<div class="show-page">
+<h2>ブログ詳細画面</h2>
+<p>タイトル: <%= @blog.title %></p>
+<p>内容: <%= @blog.content %></p>
+<button type="button" class="btn btn-primary">
+  <a href="/blogs">戻る</a>
+</button>
+<% unless @blog.user == current_user %>
+  <% if @favorite.present? %>
+    <%= link_to 'お気に入り解除する', favorite_path(blog_id: @blog.id), method: :delete, class: 'btn btn-danger' %>
+  <% else %>
+    <%= link_to 'お気に入りする', favorites_path(blog_id: @blog.id), method: :post, class: 'btn btn-warning' %>
+  <% end %>
+<% end %>
+</div>

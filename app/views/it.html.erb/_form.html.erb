@@ -1,0 +1,25 @@
+<%= form_with(model: @blog, local: true, url: choose_new_or_edit) do |form| %>
+  <% if @blog.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= @blog.errors.count %>件のエラーがあります。</h2>
+      <ul>
+
+      <% @blog.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="blog_title">
+    <%= form.label :title %><br>
+    <%= form.text_field :title , style: "border-radius:5px"%>
+  </div>
+  <div class="blog_title">
+    <%= form.label :content %><br>
+    <%= form.text_field :content , :size=>"60*10" , style: "border-radius:5px"%>
+  </div>
+  <div class="create-btn">
+  <%= form.submit "登録する" , style: "border-radius:5px"%>
+</div>
+<% end %>
