@@ -1,12 +1,13 @@
 <div class="user-page">
 <h2><%= @user.name %>のページ</h2>
-
+<p>icon: <%= image_tag @user.icon.thumb.url %></p>
 <p>メールアドレス: <%= @user.email %></p>
 
 <p>【<%= @user.name %>がお気に入りした記事】</p>
 <% @favorites_blogs.each do |blog| %>
     <p>タイトル: <%= blog.title %></p><br>
     <p>内容: <%= blog.content %></p><br>
+    <p>内容: <%= image_tag blog.image %></p><br>
   <% end %>
 </div>
 </div>

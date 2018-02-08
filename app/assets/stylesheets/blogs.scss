@@ -3,8 +3,6 @@ body{
   padding: 0;
 }
 
-
-
 ul{
   margin: 0;
   padding: 0;
@@ -18,17 +16,25 @@ li{
   color:#ffffff;
 }
 
-.index-page{
-  margin-bottom: 50px;
-}
 
 .index-page, .new-page, .edit-page, .check-page, .show-page, .signup-page, .login-page, .user-page{
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .new-page h2{
   margin-top: 100px;
   margin-bottom: 50px;
+}
+
+.signup-page h2{
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.login-page h2{
+  margin-top: 70px;
+  margin-bottom: 30px;
 }
 
 .index-page h2{
@@ -96,6 +102,10 @@ li{
 .create-btn{
   text-align: center;
   margin-top:30px;
+}
+
+.fileInput{
+  text-align: center;
 }
 
 .index-page h3{

@@ -2,6 +2,7 @@
 <h2>ブログ詳細画面</h2>
 <p>タイトル: <%= @blog.title %></p>
 <p>内容: <%= @blog.content %></p>
+<p>画像: <%= image_tag @blog.image %></p>
 <button type="button" class="btn btn-primary">
   <a href="/blogs">戻る</a>
 </button>

@@ -19,6 +19,11 @@
     <%= form.label :content %><br>
     <%= form.text_field :content , :size=>"60*10" , style: "border-radius:5px"%>
   </div>
+  <div class="blog_title">
+  <%= form.label :画像 %>
+  <%= form.file_field :image, id: :feed_image %>
+  <%= form.hidden_field :image_cache %>
+  </div>
   <div class="create-btn">
   <%= form.submit "登録する" , style: "border-radius:5px"%>
 </div>
