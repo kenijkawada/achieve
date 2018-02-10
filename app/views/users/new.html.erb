@@ -19,11 +19,9 @@
   <%= f.label :email %><br>
   <%= f.email_field :email %><br><br>
 
-  <div class=icon>
   <%= f.label :icon %><br>
-  <%= f.file_field :icon,id: :user_icon %><br><br>
+  <div class=icon><%= f.file_field :icon,id: :user_icon %></div><br><br>
   <%= f.hidden_field :icon_cache %>
-</div>
 
   <%= f.label :password %><br>
   <%= f.password_field :password %><br><br>
